@@ -146,7 +146,7 @@ while True:
         else: 
             if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
                 game_active = True
-
+                start_time = int(pygame.time.get_ticks()/1000)
 
     if game_active:
         screen.blit(sky_surface,(0,0)) #umieszczanie warstwy na wyświetlanym oknie 
